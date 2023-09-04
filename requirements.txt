@@ -8,3 +8,4 @@ markdown-it-py==3.0.0
 
 streamlit==1.25.0
 streamlit-chat==0.1.1
+google-search-results
