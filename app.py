@@ -19,7 +19,6 @@ from langchain.agents import ConversationalChatAgent
 
 os.environ["SERPAPI_API_KEY"] = "387c83df077ba5cc8533eac5f7365981e84300455a2cafcc77e9f0d9d6ef9795"
 openai_api_key = "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"  
-openai.api_key = os.environ["OPENAI_API_KEY"]
 
 st.title("Codes Chat") 
 
@@ -35,22 +34,18 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-
+## Grid Code
 service_context = ServiceContext.from_defaults(llm=OpenAI(model="gpt-3.5-turbo-0613"))
-
 storage_context = StorageContext.from_defaults(persist_dir='GC')
-
 index = load_index_from_storage(storage_context, service_context=service_context)
 
 
-
+#STC
 storage_context_STC = StorageContext.from_defaults(persist_dir='STC')
-
 index_STC = load_index_from_storage(storage_context_STC, service_context=service_context)
 
-
+#SQSS
 storage_context_SQSS = StorageContext.from_defaults(persist_dir='SQSS')
-
 index_SQSS = load_index_from_storage(storage_context_SQSS, service_context=service_context)
 
 
