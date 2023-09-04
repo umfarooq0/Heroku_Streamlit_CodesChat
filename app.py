@@ -18,8 +18,8 @@ from langchain.chains import RetrievalQA
 from langchain.agents import ConversationalChatAgent
 
 os.environ["SERPAPI_API_KEY"] = "387c83df077ba5cc8533eac5f7365981e84300455a2cafcc77e9f0d9d6ef9795"
-openai_api_key = "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"  
-os.environ["OPENAI_API_KEY"] = "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"  
+openai_api_key = "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"  
+os.environ["OPENAI_API_KEY"] = "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"  
 
 st.title("Codes Chat") 
 
